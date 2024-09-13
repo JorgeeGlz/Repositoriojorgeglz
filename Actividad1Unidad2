@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+Scanner imput = new Scanner(System.in);
+/*
+NextLine-String
+NextInt-int
+NextDouble-double
+NextBoolean-boolean
+ */
+        System.out.print("Ingrese 5 numeros para realizar la operación: ");
+        int numeroUno = imput.nextInt();
+        int numeroDos = imput.nextInt();
+        int numeroTres = imput.nextInt();
+        double numerCuatro = imput.nextDouble();
+        double numeroCinco = imput.nextDouble();
+
+        double numerador = (numeroUno/numerCuatro)*((numeroTres+numeroDos)/numeroCinco);
+        double denominador = (numeroDos+numeroTres)*numerCuatro;
+        double numeradorDos = (numeroCinco/numeroUno)+(numeroDos/numeroTres)-numerCuatro;
+        double denominadorDos = (numeroUno + numeroDos + numeroTres);
+        double resultadoUno = numerador/denominador;
+        double resultadoDos = numeradorDos/denominadorDos;
+        double resultadoFinal = resultadoUno/resultadoDos;
+        System.out.println(resultadoFinal);
+
+
+        }
+    }
